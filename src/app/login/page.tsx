@@ -1,54 +1,79 @@
+'use client'
+
+import { useState } from 'react'
 import { login, signup } from './actions'
 
-export default async function LoginPage({
-  searchParams,
-}: {
-  searchParams: Promise<{ message: string }>
-}) {
-  const params = await searchParams;
-  const message = params.message;
+export default function LoginPage() {
+  const [isSignup, setIsSignup] = useState(false)
 
   return (
-    <div className="flex-1 flex flex-col w-full px-8 sm:max-w-md justify-center gap-2 mx-auto h-screen">
-      <form className="flex-1 flex flex-col w-full justify-center gap-2 text-foreground">
-        <h1 className="text-2xl font-semibold text-center mb-6">Welcome to Chat</h1>
-        <label className="text-md font-medium" htmlFor="email">
-          Email
-        </label>
-        <input
-          className="rounded-md px-4 py-2 bg-inherit border mb-6"
-          name="email"
-          placeholder="you@example.com"
-          required
-        />
-        <label className="text-md font-medium" htmlFor="password">
-          Password
-        </label>
-        <input
-          className="rounded-md px-4 py-2 bg-inherit border mb-6"
-          type="password"
-          name="password"
-          placeholder="••••••••"
-          required
-        />
-        <button
-          formAction={login}
-          className="bg-blue-600 hover:bg-blue-700 text-white rounded-md px-4 py-2 mb-2 transition-colors"
+    <div className="min-h-screen flex items-center justify-center bg-black relative overflow-hidden">
+
+      {/* Glow */}
+      <div className="absolute w-[500px] h-[500px] bg-orange-500/20 blur-3xl rounded-full top-[-100px] left-[-100px]" />
+
+      {/* Card */}
+      <div className="relative w-full max-w-sm bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 shadow-2xl">
+
+        <form
+          action={isSignup ? signup : login}
+          className="flex flex-col gap-4"
         >
-          Sign In
-        </button>
-        <button
-          formAction={signup}
-          className="border border-foreground/20 rounded-md px-4 py-2 text-foreground mb-2 transition-colors hover:bg-gray-800"
-        >
-          Sign Up
-        </button>
-        {message && (
-          <p className="mt-4 p-4 bg-foreground/10 text-foreground text-center">
-            {message}
+
+          {/* Title */}
+          <h1 className="text-2xl font-semibold text-white">
+            {isSignup ? 'Create your account' : 'Welcome to XChat'}
+          </h1>
+
+          <p className="text-sm text-neutral-400">
+            by Sumedh
           </p>
-        )}
-      </form>
+
+          {/* Email */}
+          <input
+            name="email"
+            placeholder="Email address"
+            className="bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-white placeholder:text-neutral-500 focus:outline-none focus:border-orange-400"
+            required
+          />
+
+          {/* Password */}
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            className="bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-white placeholder:text-neutral-500 focus:outline-none focus:border-orange-400"
+            required
+          />
+
+          {/* Login-only section */}
+          {!isSignup && (
+            <p className="text-xs text-neutral-500 hover:text-white cursor-pointer">
+              Forgot Password ?
+            </p>
+          )}
+
+          {/* Button */}
+          <button
+            type="submit"
+            className="mt-2 bg-gradient-to-r from-orange-500 to-orange-400 text-white py-2 rounded-lg font-medium hover:opacity-90 transition"
+          >
+            {isSignup ? 'Sign up' : 'Log in'}
+          </button>
+
+          {/* Toggle */}
+          <p className="text-xs text-neutral-500 text-center mt-2">
+            {isSignup ? 'Already have an account?' : 'New to XChat?'}{' '}
+            <span
+              onClick={() => setIsSignup(!isSignup)}
+              className="underline cursor-pointer hover:text-white"
+            >
+              {isSignup ? 'Login' : 'Create account here'}
+            </span>
+          </p>
+
+        </form>
+      </div>
     </div>
   )
 }

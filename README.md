@@ -1,28 +1,47 @@
 xchat
-xchat is a high-performance, real-time 1-on-1 messaging application. Built with Next.js 16 and Supabase, it features a sleek, dark-themed interface designed for seamless communication across all devices.
 
-🚀 Key Features
-Real-Time Messaging: Instant message delivery using Supabase's real-time PostgreSQL subscriptions.
+🚀 𝖥𝖾𝖺𝗍𝗎𝗋𝖾𝗌 𝖺𝗍 𝖺 𝖦𝗅𝖺𝗇𝖼𝖾
 
-Presence Tracking: Real-time online/offline status indicators for all users.
+⚡ 𝖱𝖾𝖺𝗅-𝖳𝗂𝗆𝖾 𝖬𝖾𝗌𝗌𝖺𝗀𝗂𝗇𝗀: 𝖨𝗇𝗌𝗍𝖺𝗇𝗍 𝖽𝖾𝗅𝗂𝗏𝖾𝗋𝗒 𝗏𝗂𝖺 𝖲𝗎𝗉𝖺𝖻𝖺𝗌𝖾 𝗉𝗈𝗌𝗍𝗀𝗋𝖾𝗌_𝖼𝗁𝖺𝗇𝗀𝖾𝗌.
 
-Typing Indicators: Live "typing..." feedback when the other user is composing a message.
+🟢 𝖯𝗋𝖾𝗌𝖾𝗇𝖼𝖾 𝖳𝗋𝖺𝖼𝗄𝗂𝗇𝗀: 𝖲𝖾𝖾 𝗅𝗂𝗏𝖾 𝗈𝗇𝗅𝗂𝗇𝖾/𝗈𝖿𝖿𝗅𝗂𝗇𝖾 𝗌𝗍𝖺𝗍𝗎𝗌 𝗎𝗌𝗂𝗇𝗀 𝖲𝗎𝗉𝖺𝖻𝖺𝗌𝖾 𝖯𝗋𝖾𝗌𝖾𝗇𝖼𝖾.
 
-Secure Authentication: Server-side session management and protected routes via @supabase/ssr.
+✍️ 𝖳𝗒𝗉𝗂𝗇𝗀 𝖨𝗇𝖽𝗂𝖼𝖺𝗍𝗈𝗋𝗌: 𝖫𝗂𝗏𝖾 𝖿𝖾𝖾𝖽𝖻𝖺𝖼𝗄 𝗐𝗁𝖾𝗇 𝗒𝗈𝗎𝗋 𝖿𝗋𝗂𝖾𝗇𝖽𝗌 𝖺𝗋𝖾 𝖼𝗈𝗆𝗉𝗈𝗌𝗂𝗇𝗀 𝗆𝖾𝗌𝗌𝖺𝗀𝖾𝗌.
 
-User Discovery: Dynamic search functionality to find and start chats with other users.
+📱 𝖱𝖾𝗌𝗉𝗈𝗇𝗌𝗂𝗏𝖾 𝖴𝖨: 𝖲𝖾𝖺𝗆𝗅𝖾𝗌𝗌 𝖾𝗑𝗉𝖾𝗋𝗂𝖾𝗇𝖼𝖾 𝗈𝗇 𝖽𝖾𝗌𝗄𝗍𝗈𝗉 𝖺𝗇𝖽 𝗆𝗈𝖻𝗂𝗅𝖾.
 
-Profile Customization: Support for custom usernames and avatar uploads using Supabase Storage.
+🔐 𝖲𝖾𝖼𝗎𝗋𝖾 𝖠𝗎𝗍𝗁: 𝖲𝖾𝗋𝗏𝖾𝗋-𝗌𝗂𝖽𝖾 𝖺𝗎𝗍𝗁 𝖺𝗇𝖽 𝗆𝗂𝖽𝖽𝗅𝖾𝗐𝖺𝗋𝖾 𝗉𝗋𝗈𝗍𝖾𝖼𝗍𝗂𝗈𝗇.
 
-Mobile-First Design: Fully responsive layout with a dedicated mobile view for active conversations.
+⚙️ 𝖲𝖾𝗍𝗎𝗉 & 𝖨𝗇𝗌𝗍𝖺𝗅𝗅𝖺𝗍𝗂𝗈𝗇
+𝖥𝗈𝗅𝗅𝗈𝗐 𝗍𝗁𝖾𝗌𝖾 𝗌𝗍𝖾𝗉𝗌 𝗍𝗈 𝗀𝖾𝗍 𝗒𝗈𝗎𝗋 𝗅𝗈𝖼𝖺𝗅 𝖼𝗈𝗉𝗒 𝗎𝗉 𝖺𝗇𝖽 𝗋𝗎𝗇𝗇𝗂𝗇𝗀.
+𝟣. 𝖢𝗅𝗈𝗇𝖾 𝗍𝗁𝖾 𝗋𝖾𝗉𝗈:
 
-🛠️ Tech Stack
-Framework: Next.js 16 (App Router)
+Bashgit clone https://github.com/sumedhj28/xchat.git
 
-Language: TypeScript
+𝟤. 𝖤𝗇𝗏𝗂𝗋𝗈𝗇𝗆𝖾𝗇𝗍 𝖵𝖺𝗋𝗂𝖺𝖻𝗅𝖾𝗌:
 
-Backend: Supabase (Auth, Database, Realtime, Storage)
+𝖢𝗋𝖾𝖺𝗍𝖾 𝖺 .env.local 𝖿𝗂𝗅𝖾 𝗂𝗇 𝗍𝗁𝖾 𝗋𝗈𝗈𝗍:
 
-Styling: Tailwind CSS 4
+Code snippetNEXT_PUBLIC_SUPABASE_URL=your_project_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_anon_key
 
-Icons: Lucide React
+𝟥. 𝖨𝗇𝗌𝗍𝖺𝗅𝗅 𝖽𝖾𝗉𝖾𝗇𝖽𝖾𝗇𝖼𝗂𝖾𝗌:
+
+Bash
+
+npm install
+
+𝟦. 𝖫𝖺𝗎𝗇𝖼𝗁:
+Bash
+
+npm run dev
+
+📂 𝖯𝗋𝗈𝗃𝖾𝖼𝗍 𝖲𝗍𝗋𝗎𝗝𝗍𝗎𝗋𝖾
+
+📂 src/app: 𝖬𝖺𝗂𝗇 𝗋𝗈𝗎𝗍𝖾𝗌 & 𝗌𝖾𝗋𝗏𝖾𝗋 𝖺𝖼𝗍𝗂𝗈𝗇𝗌.
+
+📂 src/components: 𝖱𝖾𝗎𝗌𝖺𝖻𝗅𝖾 𝖴𝖨 𝗅𝗂𝗄𝖾 Dashboard.tsx.
+
+📂 src/utils/supabase: 𝖢𝗅𝗂𝖾𝗇𝗍 & 𝖲𝖾𝗋𝗏𝖾𝗋 𝖲𝗎𝗉𝖺𝖻𝖺𝗌𝖾 𝖼𝗈𝗇𝖿𝗂𝗀𝗌.
+
+📂 public: 𝖲𝗍𝖺𝗍𝗂𝖼 𝖺𝗌𝗌𝖾𝗍𝗌 𝖺𝗇𝖽 𝗂𝖼𝗈𝗇𝗌.
